@@ -9,7 +9,7 @@ For example:
 ```
 Of course there is no problem with renaming this file.
 
-###How to use
+### How to use
 Add class="js-nav" to parent of elements you want to run this script when clicked. You can have many menus if you want, but every of them need to have class="js-nav". Links must be in 'href' of element 'a' and point to id located on site.
 For example:
 ```
@@ -23,7 +23,7 @@ For example:
 <section id="contact"></section>
 ```
 ## About
-That`s first version of script so it could work not exactly predictable, but I`m working omn it, so be prepared for next versions with brand new bugs.
+That's first version of script so it could work not exactly predictable, but I'm working on it, so be prepared for next versions with brand new bugs.
 
-##License
-It`s free to use and to change whatever you want.
+## License
+It's free to use and to change whatever you want.
