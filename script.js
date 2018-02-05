@@ -52,13 +52,8 @@ function roundDown(number) {
 }
 function smoothScroll(offset, duration) {
     //For normal browsers
-  if (CSS.supports('scroll-behavior', 'smooth')) {
-    document.getElementsByTagName('html')[0].style['scroll-behavior'] = "smooth";
-    window.scrollBy(0,offset);
-  }
-    //For older browsers and IE
-  else {
-    var i = 0;
+  if (('scroll-behavior' in document.body.style) === false || (CSS.supports('scroll-behavior', 'smooth')) === false) {
+	 var i = 0;
     var increments = roundDown(offset / (duration / 10));
     var incrementsRemainder = (offset % (duration / 10));
     animate();
@@ -73,4 +68,9 @@ function smoothScroll(offset, duration) {
       }
     }
   }
+    //For older browsers and IE
+  else {
+    document.getElementsByTagName('html')[0].style['scroll-behavior'] = "smooth";
+    window.scrollBy(0,offset);
+  } 
 }
