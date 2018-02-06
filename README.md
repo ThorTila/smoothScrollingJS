@@ -1,4 +1,4 @@
-# smoothScrollingJS
+# smoothScrollingJS [![GitHub version](https://badge.fury.io/gh/ThorTila%2FsmoothScrollingJS.svg)](https://badge.fury.io/gh/ThorTila%2FsmoothScrollingJS)
 Simple script to add a smooth scrolling to your site wrote in vanilla JavaScript.
 
 ## Getting Started
